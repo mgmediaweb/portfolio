@@ -40,7 +40,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@mgmediaweb](https://github.com/mgmediaweb)
 - LinkedIn: [gonzalo-medina-g](https://www.linkedin.com/in/gonzalo-medina-g/)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Twitter: [@GonzoMedinaDev](https://twitter.com/GonzoMedinaDev)
 
 ## 🤝 Contributing
 
