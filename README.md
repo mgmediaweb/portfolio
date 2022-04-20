@@ -12,11 +12,9 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To view this document on your local computer, just clone this repository and view it in your preferred browser.
 
-
-To get a local copy up and running follow these simple example steps.
+Thanks for watching
 
 ### Prerequisites
 
@@ -29,10 +27,6 @@ To get a local copy up and running follow these simple example steps.
 ### Run tests
 
 - Lintern
-
-### Deployment
-
-
 
 ## Authors
 
@@ -54,9 +48,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Design base in Microverse Template
 
 ## 📝 License
 

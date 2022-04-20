@@ -1,3 +1,194 @@
-h1 {
-  color: tomato;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+
+header {
+  background-color: #3f3c3c;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+main {
+  align-items: center;
+  background-color: #1c1a19;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+}
+
+main h1 {
+  color: #f55800;
+  font-family: 'Crete Round', serif;
+  font-size: 4rem;
+  font-weight: normal;
+  line-height: 4.5rem;
+  margin-bottom: 20px;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+main p {
+  line-height: 1.75rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  font-size: 0.9rem;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: white;
+}
+
+nav a:hover {
+  color: white;
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+.social-icons a:hover {
+  color: #f55800;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 10px;
+  width: 100%;
+}
+
+.header-flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-presentation {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.movil-menu {
+  display: none;
+}
+
+.presentation {
+  max-width: 400px;
+  padding: 20px;
+  width: 100%;
+}
+
+.social-icon {
+  font-size: 1.25rem;
+  margin: 15px 0;
+}
+
+.social-icons {
+  align-items: center;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  margin-right: 30px;
+  width: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    align-items: center;
+    background-color: #1c1a19;
+    color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  main img {
+    bottom: -50px;
+    position: absolute;
+    height: 450px;
+    right: -150px;
+    width: auto;
+  }
+
+  main h1 {
+    color: #f55800;
+    font-family: 'Crete Round', serif;
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 3.5rem;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .main-presentation {
+    box-sizing: border-box;
+    display: flex;
+
+    /* flex: 1 1; */
+    flex-direction: column-reverse;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .movil-menu {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .movil-menu a {
+    color: white;
+  }
+
+  .social-icons {
+    display: inline-block;
+    height: auto;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .social-icon {
+    font-size: 1.25rem;
+    margin: 0 10px;
+  }
 }
