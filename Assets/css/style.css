@@ -39,7 +39,7 @@ header p {
   font-weight: 700;
 }
 
-main {
+section {
   align-items: center;
   background: #1c1a19 url(../images/Illustration-header.png) no-repeat bottom right;
   color: white;
@@ -50,7 +50,7 @@ main {
   width: 100%;
 }
 
-main h1 {
+section h1 {
   color: #f55800;
   font-family: 'Crete Round', serif;
   font-size: 4rem;
@@ -59,13 +59,13 @@ main h1 {
   margin-bottom: 20px;
 }
 
-main h2 {
+section h2 {
   font-size: 1.5rem;
   font-weight: normal;
   margin-bottom: 20px;
 }
 
-main p {
+section p {
   line-height: 1.75rem;
 }
 
@@ -79,7 +79,7 @@ nav ul li {
   margin: 0 10px;
 }
 
-section {
+.main-presentation {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -132,11 +132,11 @@ section {
 }
 
 @media only screen and (max-width: 500px) {
-  main {
+  section {
     align-items: center;
     background: #1c1a19 url(../images/Illustration-header.png) no-repeat;
     background-size: 331px 475px;
-    background-position: 450% 150%;
+    background-position: right -131px bottom;
     color: white;
     display: flex;
     height: 100vh;
@@ -146,10 +146,10 @@ section {
     width: 100%;
   }
 
-  main h1 {
+  section h1 {
     color: #f55800;
     font-family: 'Crete Round', serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: normal;
     line-height: 3.5rem;
     margin-bottom: 20px;
@@ -159,7 +159,7 @@ section {
     display: none;
   }
 
-  section {
+  .main-presentation {
     box-sizing: border-box;
     display: flex;
     flex-direction: column-reverse;
@@ -179,7 +179,7 @@ section {
   .social-icons {
     display: block;
     height: auto;
-    padding: 20px 30px 0 20px;
+    padding: 20px 30px 0 30px;
     text-align: left;
     width: 100%;
   }
