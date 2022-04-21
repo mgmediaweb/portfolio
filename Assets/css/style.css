@@ -18,7 +18,22 @@ header {
   z-index: 1000;
 }
 
-header h1 {
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: white;
+}
+
+header a:hover {
+  color: white;
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+header p {
   color: white;
   font-size: 1rem;
   font-weight: 700;
@@ -26,7 +41,7 @@ header h1 {
 
 main {
   align-items: center;
-  background-color: #1c1a19;
+  background: #1c1a19 url(../images/Illustration-header.png) no-repeat bottom right;
   color: white;
   display: flex;
   height: 100vh;
@@ -60,23 +75,14 @@ nav ul {
 
 nav ul li {
   display: inline;
-}
-
-nav a {
-  color: white;
   font-size: 0.9rem;
   margin: 0 10px;
-  text-decoration: none;
 }
 
-.social-icons a {
-  color: white;
-}
-
-nav a:hover {
-  color: white;
-  opacity: 0.75;
-  text-decoration: underline;
+section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .social-icons a:hover {
@@ -95,12 +101,6 @@ nav a:hover {
   align-items: center;
   display: flex;
   justify-content: space-between;
-}
-
-.main-presentation {
-  align-items: center;
-  display: flex;
-  justify-content: center;
 }
 
 .movil-menu {
@@ -127,10 +127,16 @@ nav a:hover {
   width: 80px;
 }
 
+.social-icons ul {
+  list-style: none;
+}
+
 @media only screen and (max-width: 500px) {
   main {
     align-items: center;
-    background-color: #1c1a19;
+    background: #1c1a19 url(../images/Illustration-header.png) no-repeat;
+    background-size: 331px 475px;
+    background-position: 450% 150%;
     color: white;
     display: flex;
     height: 100vh;
@@ -138,14 +144,6 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     width: 100%;
-  }
-
-  main img {
-    bottom: -50px;
-    position: absolute;
-    height: 450px;
-    right: -150px;
-    width: auto;
   }
 
   main h1 {
@@ -161,11 +159,9 @@ nav a:hover {
     display: none;
   }
 
-  .main-presentation {
+  section {
     box-sizing: border-box;
     display: flex;
-
-    /* flex: 1 1; */
     flex-direction: column-reverse;
     padding: 0 30px;
     width: 100%;
@@ -181,10 +177,15 @@ nav a:hover {
   }
 
   .social-icons {
-    display: inline-block;
+    display: block;
     height: auto;
-    margin-top: 20px;
+    padding: 20px 30px 0 20px;
+    text-align: left;
     width: 100%;
+  }
+
+  .social-icons ul li {
+    display: inline-block;
   }
 
   .social-icon {
