@@ -1,3 +1,195 @@
-h1 {
-  color: tomato;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+
+header {
+  background-color: #3f3c3c;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: white;
+}
+
+header a:hover {
+  color: white;
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+header p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+section {
+  align-items: center;
+  background: #1c1a19 url(../images/Illustration-header.png) no-repeat bottom right;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+}
+
+section h1 {
+  color: #f55800;
+  font-family: 'Crete Round', serif;
+  font-size: 4rem;
+  font-weight: normal;
+  line-height: 4.5rem;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+section p {
+  line-height: 1.75rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 0.9rem;
+  margin: 0 10px;
+}
+
+.main-presentation {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  color: #f55800;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 10px;
+  width: 100%;
+}
+
+.header-flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.movil-menu {
+  display: none;
+}
+
+.presentation {
+  max-width: 400px;
+  padding: 20px;
+  width: 100%;
+}
+
+.social-icon {
+  font-size: 1.25rem;
+  margin: 15px 0;
+}
+
+.social-icons {
+  align-items: center;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  margin-right: 30px;
+  width: 80px;
+}
+
+.social-icons ul {
+  list-style: none;
+}
+
+@media only screen and (max-width: 500px) {
+  section {
+    align-items: center;
+    background: #1c1a19 url(../images/Illustration-header.png) no-repeat;
+    background-size: 331px 475px;
+    background-position: right -131px bottom;
+    color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  section h1 {
+    color: #f55800;
+    font-family: 'Crete Round', serif;
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 3.5rem;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .main-presentation {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .movil-menu {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .movil-menu a {
+    color: white;
+  }
+
+  .social-icons {
+    display: block;
+    height: auto;
+    padding: 20px 30px 0 30px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .social-icons ul li {
+    display: inline-block;
+  }
+
+  .social-icon {
+    font-size: 1.25rem;
+    margin: 0 10px;
+  }
 }
