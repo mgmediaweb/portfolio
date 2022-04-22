@@ -382,7 +382,7 @@ header a:hover {
   color: #f55800;
 }
 
-/* Setup for mobile devices */
+/* Setup for mobile devices with screen is 500px */
 
 @media only screen and (max-width: 500px) {
   nav {
