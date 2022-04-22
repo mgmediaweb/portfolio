@@ -8,29 +8,65 @@ html {
   font-size: 18px;
 }
 
-header {
-  background-color: #3f3c3c;
-  left: 0;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-header a {
+a {
+  background-color: #f55800;
   color: white;
+  display: inline-block;
+  padding: 6px 12px;
   text-decoration: none;
 }
 
-.social-icons a {
-  color: white;
+article {
+  align-items: center;
+  border: solid 1px white;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-header a:hover {
+img {
+  height: 100%;
+  position: absolute;
+  width: auto;
+}
+
+.work-btn {
+  background-color: #f55800;
+  bottom: 0;
   color: white;
-  opacity: 0.75;
-  text-decoration: underline;
+  display: none;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.work-info {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0) 100%);
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  left: 0;
+  padding: 10px 10px 0 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.work-info h4 {
+  font-family: 'Crete Round', serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
 }
 
 header p {
@@ -39,34 +75,10 @@ header p {
   font-weight: 700;
 }
 
-section {
-  align-items: center;
-  background: #1c1a19 url(../images/Illustration-header.png) no-repeat bottom right;
-  color: white;
-  display: flex;
-  height: 100vh;
-  justify-content: space-between;
-  overflow: hidden;
-  width: 100%;
-}
-
-section h1 {
-  color: #f55800;
-  font-family: 'Crete Round', serif;
-  font-size: 4rem;
-  font-weight: normal;
-  line-height: 4.5rem;
-  margin-bottom: 20px;
-}
-
-section h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-bottom: 20px;
-}
-
-section p {
-  line-height: 1.75rem;
+.work-info p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin-bottom: 10px;
 }
 
 nav ul {
@@ -79,14 +91,212 @@ nav ul li {
   margin: 0 10px;
 }
 
+.lang-tag {
+  list-style: none;
+}
+
+.lang-tag li {
+  background-color: rgba(100, 100, 100, 0.75);
+  display: inline-block;
+  font-size: 0.7rem;
+  margin: 0 10px 10px 0;
+  padding: 7px;
+}
+
+header {
+  background-color: #3f3c3c;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header a {
+  background: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.social-icons a {
+  background: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.latest-work p {
+  margin-bottom: 30px;
+}
+
+#about {
+  align-items: center;
+  background: #1c1a19;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#about hr {
+  border: 1px solid #9b9b9b;
+}
+
+#about .about-background {
+  align-items: center;
+  background: url(../images/Frame.png) no-repeat right center;
+  background-size: 439px 244px;
+  background-position: right center;
+  min-height: 400px;
+  display: flex;
+  width: 100%;
+}
+
+#cover p {
+  line-height: 1.75rem;
+}
+
+#about .content-info {
+  width: 50%;
+}
+
+#about .content-info p {
+  color: white;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#cover h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+#portfolio h2 {
+  border-bottom: 1px solid #000;
+  color: black;
+  font-family: 'Crete Round', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 0.1em;
+  margin: 0 0 10vh 0;
+  width: 100%;
+}
+
+#about .content-info h2 {
+  color: #f55800;
+  font-family: 'Crete Round', serif;
+  font-size: 3.5rem;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+#cover {
+  align-items: center;
+  background: #1c1a19 url(../images/Illustration-header.png) no-repeat bottom right;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+#cover h1 {
+  color: #f55800;
+  font-family: 'Crete Round', serif;
+  font-size: 4rem;
+  font-weight: normal;
+  line-height: 4.5rem;
+  margin-bottom: 20px;
+}
+
+#portfolio {
+  padding: 80px 0;
+}
+
+#portfolio h2 span {
+  background: white;
+  padding-right: 20px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 30px;
+  margin: 50px 0 30px 0;
+  width: 100%;
+}
+
+.features h4 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.features ul {
+  list-style: none;
+}
+
+.features ul li {
+  padding-bottom: 20px;
+}
+
+.features .feature-item {
+  margin-bottom: 20px;
+}
+
+.features .icon-skill {
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  vertical-align: baseline;
+  width: 20px;
+}
+
+.latest-work {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.latest-work h3 {
+  color: black;
+  font-family: 'Crete Round', serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.latest-work-image {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.latest-work .lang-tag {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.latest-work .lang-tag li {
+  border: solid 1px #000;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0 10px 10px 0;
+  padding: 7px;
+}
+
 .main-presentation {
   align-items: center;
   display: flex;
   justify-content: center;
-}
-
-.social-icons a:hover {
-  color: #f55800;
 }
 
 .container {
@@ -131,24 +341,82 @@ nav ul li {
   list-style: none;
 }
 
-/* Setup for mobile devices */
+.work-gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.work-gallery a {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  background-color: #b94200;
+  text-decoration: none;
+}
+
+article:hover {
+  border: solid 1px black;
+}
+
+article:hover .work-info {
+  display: none;
+}
+
+article:hover .work-btn {
+  display: block;
+}
+
+header a:hover {
+  background: none;
+  color: white;
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+.social-icons a:hover {
+  color: #f55800;
+}
+
+/* Setup for mobile devices with screen is 500px */
 
 @media only screen and (max-width: 500px) {
-  section {
+  nav {
+    display: none;
+  }
+
+  #about .about-background {
+    align-items: center;
+    background: url(../images/Frame.png) no-repeat right center;
+    background-size: 293px 177px;
+    background-position: right -141px bottom;
+    display: block;
+    padding-bottom: 70px;
+    width: 100%;
+  }
+
+  #about .content-info {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  #cover {
     align-items: center;
     background: #1c1a19 url(../images/Illustration-header.png) no-repeat;
     background-size: 331px 475px;
     background-position: right -131px bottom;
     color: white;
     display: flex;
-    height: 100vh;
     justify-content: space-between;
     position: relative;
-    overflow: hidden;
-    width: 100%;
   }
 
-  section h1 {
+  #cover h1 {
     color: #f55800;
     font-family: 'Crete Round', serif;
     font-size: 3rem;
@@ -157,8 +425,31 @@ nav ul li {
     margin-bottom: 20px;
   }
 
-  nav {
-    display: none;
+  #portfolio {
+    box-sizing: border-box;
+    padding: 40px 20px;
+  }
+
+  .features {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0 20px;
+  }
+
+  .features .feature-item {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .latest-work {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .latest-work .lw-image {
+    margin-bottom: 20px;
   }
 
   .main-presentation {
@@ -193,5 +484,12 @@ nav ul li {
   .social-icon {
     font-size: 1.25rem;
     margin: 0 10px;
+  }
+
+  .work-gallery {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 30px;
+    row-gap: 30px;
   }
 }
