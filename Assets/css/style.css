@@ -94,10 +94,15 @@ nav ul li {
 .lang-tag {
   list-style: none;
 }
-
+.lang-tag::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 .lang-tag li {
   background-color: rgba(100, 100, 100, 0.75);
-  display: inline-block;
+  /* display: inline-block; */
+  float: left;
   font-size: 0.7rem;
   margin: 0 10px 10px 0;
   padding: 7px;
