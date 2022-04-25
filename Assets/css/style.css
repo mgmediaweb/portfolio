@@ -103,7 +103,6 @@ nav ul li {
 
 .lang-tag li {
   background-color: rgba(100, 100, 100, 0.75);
-  /* display: inline-block; */
   float: left;
   font-size: 0.7rem;
   margin: 0 10px 10px 0;
