@@ -95,12 +95,12 @@ nav ul li {
   list-style: none;
 }
 
-
 .lang-tag::after{
   content: "";
   display: block;
   clear: both;
 }
+
 .lang-tag li {
   background-color: rgba(100, 100, 100, 0.75);
   /* display: inline-block; */
