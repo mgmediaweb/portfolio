@@ -80,7 +80,12 @@ textarea {
   padding: 100px 0;
   width: 100%;
 }
-
+.contact-container p{
+  transition: transform 0.5s ease-out;
+}
+.contact-container p:hover{
+  transform: translatey(10px);
+}
 .container {
   box-sizing: border-box;
   margin: 0 auto;
@@ -114,6 +119,21 @@ textarea {
   display: flex;
   justify-content: space-between;
 }
+.header-flex p{
+  transition: transform 0.5s ease-out;
+  animation-name: rotate-logo;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotate-logo {
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
 
 .lang-tag {
   list-style: none;
@@ -135,6 +155,11 @@ textarea {
   height: auto;
   position: relative;
   width: 100%;
+  transition: all 0.5s ease-in;
+  
+}
+.latest-work-image:hover{
+transform: scale(1.05);
 }
 
 .main-presentation {
@@ -512,7 +537,15 @@ article:hover .work-btn {
     font-size: 0.9rem;
     margin: 0 10px;
   }
+  .header-flex nav ul li a{
+    transition: all 0.5s ease-in;
 
+  }
+  .header-flex nav ul li a:hover{
+    color: #fcf9f9a8;
+    font-size: 18px;
+
+  }
   .main-presentation {
     align-items: center;
     display: flex;
@@ -561,7 +594,9 @@ article:hover .work-btn {
     padding: 20px 50px;
     width: 50%;
   }
-
+  .contact-container p:hover{
+    transform: translatex(20px);
+  }
   #contact .contact-form {
     box-sizing: border-box;
     height: auto;
