@@ -3,6 +3,30 @@
   padding: 0;
 }
 
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes anim_image {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* SEMANTIC TAG SECTION */
 
 html {
@@ -135,6 +159,11 @@ textarea {
   height: auto;
   position: relative;
   width: 100%;
+  transition: all 0.5s ease-in;
+}
+
+.latest-work-image:hover {
+  transform: scale(1.05);
 }
 
 .main-presentation {
@@ -174,6 +203,7 @@ textarea {
   color: white;
   font-size: 1rem;
   padding: 12px 18px;
+  transition: 0.5s;
 }
 
 .work-btn {
@@ -258,7 +288,6 @@ textarea {
   color: white;
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 
 #portfolio {
@@ -279,6 +308,7 @@ a {
   display: inline-block;
   padding: 6px 12px;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 header a {
@@ -298,6 +328,7 @@ header a {
   color: white;
   margin: 0;
   padding: 0;
+  transition: 0.5s;
 }
 
 .work-gallery a {
@@ -311,18 +342,19 @@ header a {
 a:hover {
   background-color: #b94200;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 header a:hover {
   background: none;
   color: white;
   opacity: 0.75;
-  text-decoration: underline;
 }
 
 .social-icons a:hover {
   background: none;
   color: #f55800;
+  transition: 0.5s;
 }
 
 /* TITLES SECTION */
@@ -395,10 +427,21 @@ header p {
   font-weight: 700;
 }
 
+.contact-container p {
+  transition: transform 0.5s ease-out;
+}
+
 .content-info p {
   color: white;
   line-height: 1.5rem;
   margin-bottom: 20px;
+}
+
+.header-flex p {
+  transition: transform 0.5s ease-out;
+  animation-name: rotate-logo;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
 .latest-work p {
@@ -409,6 +452,10 @@ header p {
   font-size: 0.8rem;
   line-height: 1rem;
   margin-bottom: 10px;
+}
+
+.contact-container p:hover {
+  transform: translateY(10px);
 }
 
 #contact p {
@@ -475,10 +522,16 @@ header p {
   background: none;
   color: #505f79;
   padding: 0 8px;
+  transition: 0.5s;
 }
 
 article:hover {
   border: solid 1px black;
+}
+
+article:hover img {
+  animation-name: anim_image;
+  animation-duration: 1s;
 }
 
 article:hover .work-info {
@@ -492,11 +545,13 @@ article:hover .work-btn {
 #contact li a:hover {
   background: none;
   color: #242a36;
+  transition: 0.5s;
 }
 
 .submit_btn:hover {
   background-color: #b94200;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -512,6 +567,15 @@ article:hover .work-btn {
     display: inline;
     font-size: 0.9rem;
     margin: 0 10px;
+  }
+
+  .header-flex nav ul li a {
+    transition: all 0.5s ease-in;
+  }
+
+  .header-flex nav ul li a:hover {
+    color: #fcf9f9a8;
+    font-size: 18px;
   }
 
   .main-presentation {
