@@ -4,22 +4,25 @@
 }
 
 @keyframes rotate-logo {
-  0%{
+  0% {
     transform: rotate(360deg);
   }
-  100%{
+
+  100% {
     transform: rotate(0deg);
   }
 }
 
 @keyframes anim_image {
-  0%{
+  0% {
     transform: scale(1);
   }
-  50%{
+
+  50% {
     transform: scale(1.25);
-  }  
-  100%{
+  }
+
+  100% {
     transform: scale(1);
   }
 }
@@ -101,12 +104,7 @@ textarea {
   padding: 100px 0;
   width: 100%;
 }
-.contact-container p{
-  transition: transform 0.5s ease-out;
-}
-.contact-container p:hover{
-  transform: translatey(10px);
-}
+
 .container {
   box-sizing: border-box;
   margin: 0 auto;
@@ -141,13 +139,6 @@ textarea {
   justify-content: space-between;
 }
 
-.header-flex p{
-  transition: transform 0.5s ease-out;
-  animation-name: rotate-logo;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-
 .lang-tag {
   list-style: none;
 }
@@ -169,10 +160,10 @@ textarea {
   position: relative;
   width: 100%;
   transition: all 0.5s ease-in;
-  
 }
-.latest-work-image:hover{
-transform: scale(1.05);
+
+.latest-work-image:hover {
+  transform: scale(1.05);
 }
 
 .main-presentation {
@@ -436,10 +427,21 @@ header p {
   font-weight: 700;
 }
 
+.contact-container p {
+  transition: transform 0.5s ease-out;
+}
+
 .content-info p {
   color: white;
   line-height: 1.5rem;
   margin-bottom: 20px;
+}
+
+.header-flex p {
+  transition: transform 0.5s ease-out;
+  animation-name: rotate-logo;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
 .latest-work p {
@@ -450,6 +452,10 @@ header p {
   font-size: 0.8rem;
   line-height: 1rem;
   margin-bottom: 10px;
+}
+
+.contact-container p:hover {
+  transform: translateY(10px);
 }
 
 #contact p {
@@ -562,15 +568,16 @@ article:hover .work-btn {
     font-size: 0.9rem;
     margin: 0 10px;
   }
-  .header-flex nav ul li a{
-    transition: all 0.5s ease-in;
 
+  .header-flex nav ul li a {
+    transition: all 0.5s ease-in;
   }
-  .header-flex nav ul li a:hover{
+
+  .header-flex nav ul li a:hover {
     color: #fcf9f9a8;
     font-size: 18px;
-
   }
+
   .main-presentation {
     align-items: center;
     display: flex;
@@ -619,9 +626,7 @@ article:hover .work-btn {
     padding: 20px 50px;
     width: 50%;
   }
-  .contact-container p:hover{
-    transform: translatex(20px);
-  }
+
   #contact .contact-form {
     box-sizing: border-box;
     height: auto;
