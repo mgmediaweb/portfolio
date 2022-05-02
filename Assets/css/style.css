@@ -3,13 +3,13 @@
   padding: 0;
 }
 
-@keyframes rotate-logo {
+@keyframes anim-logo {
   0% {
-    transform: rotate(360deg);
+    transform: scale(0);
   }
 
   100% {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
 }
 
@@ -19,7 +19,7 @@
   }
 
   50% {
-    transform: scale(1.25);
+    transform: scale(1.1);
   }
 
   100% {
@@ -160,10 +160,6 @@ textarea {
   position: relative;
   width: 100%;
   transition: all 0.5s ease-in;
-}
-
-.latest-work-image:hover {
-  transform: scale(1.05);
 }
 
 .main-presentation {
@@ -347,8 +343,7 @@ a:hover {
 
 header a:hover {
   background: none;
-  color: white;
-  opacity: 0.75;
+  color: #f55800;
 }
 
 .social-icons a:hover {
@@ -427,10 +422,6 @@ header p {
   font-weight: 700;
 }
 
-.contact-container p {
-  transition: transform 0.5s ease-out;
-}
-
 .content-info p {
   color: white;
   line-height: 1.5rem;
@@ -439,7 +430,7 @@ header p {
 
 .header-flex p {
   transition: transform 0.5s ease-out;
-  animation-name: rotate-logo;
+  animation-name: anim-logo;
   animation-duration: 1s;
   animation-iteration-count: 1;
 }
@@ -452,10 +443,6 @@ header p {
   font-size: 0.8rem;
   line-height: 1rem;
   margin-bottom: 10px;
-}
-
-.contact-container p:hover {
-  transform: translateY(10px);
 }
 
 #contact p {
@@ -554,6 +541,12 @@ article:hover .work-btn {
   transition: 0.5s;
 }
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DESKTOP VERSION XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
 @media screen and (min-width: 768px) {
   nav {
     display: block;
@@ -569,13 +562,13 @@ article:hover .work-btn {
     margin: 0 10px;
   }
 
-  .header-flex nav ul li a {
-    transition: all 0.5s ease-in;
+  nav ul li a {
+    transition: all 0.5s;
   }
 
-  .header-flex nav ul li a:hover {
-    color: #fcf9f9a8;
-    font-size: 18px;
+  nav ul li a:hover {
+    transition: all 0.5s;
+    color: #f55800;
   }
 
   .main-presentation {
