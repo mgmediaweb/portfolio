@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@400;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="Assets/css/style.css" />
+    <script src="Assets/js/scripts.js"></script>
 </head>
 <body>
     <header>
@@ -28,7 +29,7 @@
                 </ul>
             </nav>
             <div class="movil-menu">
-                <a href="#"><i class="fas fa-bars"></i></a>
+                <a href="javascript:menuOpen();"><i class="fas fa-bars"></i></a>
             </div>
         </div>        
     </header>
@@ -57,12 +58,12 @@
                 <h2><span>My Recent Works</span></h2>
                 <div class="latest-work">
                     <div class="lw-image">
-                        <img src="Assets/portfolio/andrade-propiedades.jpg" alt="Andrade Propiedades" class="latest-work-image" />
+                        <img src="Assets/portfolio/latest-andrade-propiedades.jpg" alt="Andrade Propiedades" class="contained-image" />
                     </div>
                     <div class="lw-info">
                         <h3>Andrade Propiedades</h3>
                         <p>Website of an important real estate agency in Chile, it has a complete catalog of homes and a map of their locations, it has an intelligent search engine where you can search for multiple combinations of specifications.</p>
-                        <ul class="lang-tag">
+                        <ul class="lang-tag-base">
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Bootstrap</li>
@@ -70,12 +71,12 @@
                             <li>PHP</li>
                             <li>MySQL</li>
                         </ul>
-                        <a href="#">See Project</a>
+                        <a href="javascript:modalOpen(0)">See Project</a>
                     </div>
                 </div>
 
                 <div class="work-gallery">
-                    <a href="#">
+                    <a href="javascript:modalOpen(1)">
                         <article>
                             <img src="Assets/portfolio/erp-doctorcaps.jpg" alt="Doctor Caps Mexico" />
                             <div class="work-info">
@@ -93,7 +94,7 @@
                             <div class="work-btn">See Project</div>
                         </article>
                     </a>
-                    <a href="#">
+                    <a href="javascript:modalOpen(2)">
                         <article>
                             <img src="Assets/portfolio/erp-quitral.jpg" alt="Agua Quitral" />
                             <div class="work-info">
@@ -111,7 +112,7 @@
                             <div class="work-btn">See Project</div>
                         </article>
                     </a>
-                    <a href="#">
+                    <a href="javascript:modalOpen(3)">
                         <article>
                             <img src="Assets/portfolio/ecommerce-dymark.jpg" alt="Dymark Mexico" />
                             <div class="work-info">
@@ -129,7 +130,7 @@
                             <div class="work-btn">See Project</div>
                         </article>
                     </a>
-                    <a href="#">
+                    <a href="javascript:modalOpen(4)">
                         <article>
                             <img src="Assets/portfolio/web-inmobiliaramataquito.jpg" alt="Inmobiliaria Mataquito" />
                             <div class="work-info">
@@ -147,7 +148,7 @@
                             <div class="work-btn">See Project</div>
                         </article>
                     </a>                
-                    <a href="#">
+                    <a href="javascript:modalOpen(5)">
                         <article>
                             <img src="Assets/portfolio/web-liceonuevohorizonte.jpg" alt="Liceo Nuevo Horizonte" />
                             <div class="work-info">
@@ -165,7 +166,7 @@
                             <div class="work-btn">See Project</div>
                         </article>
                     </a>
-                    <a href="#">
+                    <a href="javascript:modalOpen(6)">
                         <article>
                             <img src="Assets/portfolio/web-hosterialafama.jpg" alt="Hosteria la Fama" />
                             <div class="work-info">
@@ -253,5 +254,42 @@
             </ul>
         </section>
     </main>
+
+    <div id="modalWin" class="modal">
+        <div class="modalWin">
+            <div id="closeModal" onClick="modalClose()"><i class="fas fa-times"></i></div>
+            <h2 id="modal_title">Andrade Propiedades</h2>
+            <ul id="modal_lang" class="lang-tag-base">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Jquery</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+            <div class="modalGrid">
+                <div class="modalImage">
+                    <img id="modal_image" src="Assets/portfolio/web-hosterialafama.jpg" alt="Portfolio Detail" class="contained-image" />
+                </div>
+                <div class="modalInfo">
+                    <p id="modal_description">I was born and raised in Chile, now I live in northwestern Mexico, throughout my career I have created countless technological solutions for all types of companies, in very varied markets. I am always constantly growing in my technical knowledge to always provide the best solution available today.</p>
+                    <a href="#">See Live <i class="fas fa-link"></i></a>
+                    <a href="#">See Source <i class="fas fa-code"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile_menu">
+        <div id="mobile_button" onClick="menuClose();">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="javascript:goto('portfolio');">Portfolio</a></li>
+            <li><a href="javascript:goto('about');">About</a></li>
+            <li><a href="javascript:goto('contact');">Contact</a></li>
+        </ul>
+    </div>    
+
 </body>
 </html>
