@@ -62,6 +62,16 @@ const goto = (section) => {
   menuClose();
 };
 
+const modalClose = (opc = false) => {
+  if (opc) {
+    modal.classList.remove('modal_show');
+    modal.classList.add('modal_hide');
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 500);
+  }
+};
+
 const modalOpen = (num = null) => {
   if (num != null) {
     const langs = projects[num].languages;
@@ -75,11 +85,12 @@ const modalOpen = (num = null) => {
     document.getElementById('modal_lang').innerHTML = showLangs;
 
     modal.style.display = 'flex';
-  }
-};
 
-const modalClose = (opc = false) => {
-  if (opc) modal.style.display = 'none';
+    setTimeout(() => {
+      modal.classList.remove('modal_hide');
+      modal.classList.add('modal_show');
+    }, 100);
+  }
 };
 
 mobileMenuBtnClose.addEventListener('click', menuClose);
