@@ -237,6 +237,7 @@ textarea {
 }
 
 .movil-menu {
+  color: white;
   display: block;
   padding: 0 20px;
 }
@@ -408,10 +409,6 @@ header a {
   margin: 0;
   padding: 0;
   text-decoration: none;
-}
-
-.movil-menu {
-  color: white;
 }
 
 .social-icons a {
