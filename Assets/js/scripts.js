@@ -4,42 +4,56 @@ const projects = [
     description: 'Website of an important real estate agency in Chile, it has a complete catalog of homes and a map of their locations, it has an intelligent search engine where you can search for multiple combinations of specifications.',
     image: 'andrade-propiedades.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
+    link: 'http://www.andradepropiedades.com/',
+    source: 'https://github.com/mgmediaweb'
   },
   {
     client: 'Doctor Caps Mexico',
     description: "Sales solution and monitoring of the status of each client's project, uses QR code reading.",
     image: 'erp-doctorcaps.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
+    link: 'http://www.doctorcapsmexico.com/',
+    source: 'https://github.com/mgmediaweb'
   },
   {
     client: 'Agua Quitral',
     description: 'Complete ERP system, tracks sales and dispatches, optimizes routes and deliveries to distributors.',
     image: 'erp-quitral.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
+    link: 'http://www.aguaquitral.cl/',
+    source: 'https://github.com/mgmediaweb'
   },
   {
     client: 'Dymark Mexico',
     description: 'Ecommerce system for the sale of products organized by categories, brands and sizes for homes such as food services.',
     image: 'ecommerce-dymark.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
+    link: 'http://www.dymarkmexico.com/',
+    source: 'https://github.com/mgmediaweb'
   },
   {
     client: 'Inmobiliaria Mataquito',
     description: 'Website listing properties available for rent, identifies their locations and nearby points of interest on a map.',
     image: 'web-inmobiliaramataquito.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
+    link: 'http://www.imataquito.cl/',
+    source: 'https://github.com/mgmediaweb'
   },
   {
     client: 'Liceo Nuevo Horizonte',
     description: 'Education system that shows various attached documents in interconnected galleries, teachers and bookstores.',
     image: 'web-liceonuevohorizonte.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
+    link: 'http://www.lnuevohorizonte.cl/',
+    source: 'https://github.com/mgmediaweb'
   },
   {
     client: 'Hosteria la Fama',
     description: 'Traditional restaurant website, innovative and thematic design that makes the user feel physically there.',
     image: 'web-hosterialafama.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery'],
+    link: 'http://www.hosterialafama.cl/',
+    source: 'https://github.com/mgmediaweb'
   },
 ];
 
@@ -83,6 +97,8 @@ const modalOpen = (num = null) => {
     document.getElementById('modal_image').src = `Assets/portfolio/${projects[num].image}`;
     document.getElementById('modal_description').innerHTML = projects[num].description;
     document.getElementById('modal_lang').innerHTML = showLangs;
+    document.getElementById('modal_live').href = projects[num].link;
+    document.getElementById('modal_source').href = projects[num].source;
 
     modal.style.display = 'flex';
 
