@@ -113,6 +113,12 @@ textarea {
   width: 100%;
 }
 
+.contained-image {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
 .features {
   box-sizing: border-box;
   display: grid;
@@ -143,23 +149,16 @@ textarea {
   list-style: none;
 }
 
+.lang-tag-base {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
 .latest-work {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto;
   margin-bottom: 20px;
-}
-
-.latest-work .lang-tag {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.latest-work-image {
-  height: auto;
-  position: relative;
-  width: 100%;
-  transition: all 0.5s ease-in;
 }
 
 .main-presentation {
@@ -170,9 +169,89 @@ textarea {
   width: 100%;
 }
 
+.menu_hide {
+  left: 100%;
+  opacity: 0;
+}
+
+.menu_show {
+  left: 0;
+  opacity: 1;
+}
+
+.modal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.modalWin {
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  max-height: 800px;
+  max-width: 1080px;
+  padding: 10px;
+  position: relative;
+  width: 90%;
+  transition: 1s;
+}
+
+.modalWin h2 {
+  font-family: 'Crete Round', serif;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 2rem;
+  margin-bottom: 15px;
+}
+
+.modalWin #closeModal {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  float: right;
+  justify-content: center;
+  height: 50px;
+  margin: -10px -10px 0 0;
+  opacity: 0.33;
+  transition: 0.5s;
+  width: 50px;
+}
+
+.modalWin #closeModal:hover {
+  cursor: pointer;
+  font-size: 1.5rem;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.modalWin .modalImage {
+  padding-bottom: 10px;
+}
+
+.modalWin .modalInfo {
+  padding: 0 0 0 0;
+}
+
+.modalGrid {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 0;
+}
+
 .movil-menu {
+  color: white;
   display: block;
   padding: 0 20px;
+  user-select: none;
 }
 
 .presentation {
@@ -286,6 +365,34 @@ textarea {
   justify-content: space-between;
 }
 
+#mobile_menu {
+  background-color: #3c3a39;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px;
+  position: fixed;
+  transition: 0.5s;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#mobile_menu #mobile_button {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  user-select: none;
+  width: 50px;
+}
+
 #portfolio {
   padding: 80px 0;
 }
@@ -302,6 +409,7 @@ a {
   background-color: #f55800;
   color: white;
   display: inline-block;
+  margin-right: 10px;
   padding: 6px 12px;
   text-decoration: none;
   transition: 0.5s;
@@ -313,10 +421,6 @@ header a {
   margin: 0;
   padding: 0;
   text-decoration: none;
-}
-
-.movil-menu a {
-  color: white;
 }
 
 .social-icons a {
@@ -350,6 +454,12 @@ header a:hover {
   background: none;
   color: #f55800;
   transition: 0.5s;
+}
+
+#mobile_menu a {
+  background: none;
+  color: #fff5e1;
+  text-decoration: none;
 }
 
 /* TITLES SECTION */
@@ -439,6 +549,13 @@ header p {
   margin-bottom: 30px;
 }
 
+.modalWin p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
 .work-info p {
   font-size: 0.8rem;
   line-height: 1rem;
@@ -474,6 +591,12 @@ header p {
   text-align: center;
 }
 
+#mobile_menu ul {
+  list-style-type: none;
+  margin: 60px 0 0 0;
+  padding: 0;
+}
+
 /* LI SECTION */
 
 .lang-tag li {
@@ -484,21 +607,21 @@ header p {
   padding: 7px;
 }
 
-.features li {
-  padding-bottom: 20px;
-}
-
-.social-icons li {
-  display: inline-block;
-}
-
-.latest-work .lang-tag li {
+.lang-tag-base li {
   background: none;
   border: solid 1px #000;
   display: inline-block;
   font-size: 0.8rem;
   margin: 0 10px 10px 0;
   padding: 7px;
+}
+
+.features li {
+  padding-bottom: 20px;
+}
+
+.social-icons li {
+  display: inline-block;
 }
 
 #contact li {
@@ -512,6 +635,12 @@ header p {
   transition: 0.5s;
 }
 
+#mobile_menu li {
+  border-bottom: solid 1px #6f6c6b;
+  margin: 0;
+  padding: 20px;
+}
+
 article:hover {
   border: solid 1px black;
 }
@@ -519,6 +648,12 @@ article:hover {
 article:hover img {
   animation-name: anim_image;
   animation-duration: 1s;
+}
+
+#mobile_menu #mobile_button img {
+  height: 20px;
+  opacity: 0.6;
+  width: 20px;
 }
 
 article:hover .work-info {
@@ -649,6 +784,10 @@ article:hover .work-btn {
     margin-bottom: 20px;
   }
 
+  #mobile_menu {
+    display: none;
+  }
+
   .contact-container {
     align-items: center;
     display: flex;
@@ -689,6 +828,15 @@ article:hover .work-btn {
 
   .features ul {
     list-style: none;
+  }
+
+  .modalWin .modalInfo {
+    padding: 0 0 10px 20px;
+  }
+
+  .modalGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 
   .work-gallery {
