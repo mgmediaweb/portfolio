@@ -5,7 +5,7 @@ const projects = [
     image: 'andrade-propiedades.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     link: 'http://www.andradepropiedades.com/',
-    source: 'https://github.com/mgmediaweb'
+    source: 'https://github.com/mgmediaweb',
   },
   {
     client: 'Doctor Caps Mexico',
@@ -13,7 +13,7 @@ const projects = [
     image: 'erp-doctorcaps.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     link: 'http://www.doctorcapsmexico.com/',
-    source: 'https://github.com/mgmediaweb'
+    source: 'https://github.com/mgmediaweb',
   },
   {
     client: 'Agua Quitral',
@@ -21,7 +21,7 @@ const projects = [
     image: 'erp-quitral.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     link: 'http://www.aguaquitral.cl/',
-    source: 'https://github.com/mgmediaweb'
+    source: 'https://github.com/mgmediaweb',
   },
   {
     client: 'Dymark Mexico',
@@ -29,7 +29,7 @@ const projects = [
     image: 'ecommerce-dymark.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     link: 'http://www.dymarkmexico.com/',
-    source: 'https://github.com/mgmediaweb'
+    source: 'https://github.com/mgmediaweb',
   },
   {
     client: 'Inmobiliaria Mataquito',
@@ -37,7 +37,7 @@ const projects = [
     image: 'web-inmobiliaramataquito.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     link: 'http://www.imataquito.cl/',
-    source: 'https://github.com/mgmediaweb'
+    source: 'https://github.com/mgmediaweb',
   },
   {
     client: 'Liceo Nuevo Horizonte',
@@ -45,7 +45,7 @@ const projects = [
     image: 'web-liceonuevohorizonte.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery', 'PHP', 'MySQL'],
     link: 'http://www.lnuevohorizonte.cl/',
-    source: 'https://github.com/mgmediaweb'
+    source: 'https://github.com/mgmediaweb',
   },
   {
     client: 'Hosteria la Fama',
@@ -53,7 +53,7 @@ const projects = [
     image: 'web-hosterialafama.jpg',
     languages: ['HTML', 'CSS', 'Bootstrap', 'Jquery'],
     link: 'http://www.hosterialafama.cl/',
-    source: 'https://github.com/mgmediaweb'
+    source: 'https://github.com/mgmediaweb',
   },
 ];
 
