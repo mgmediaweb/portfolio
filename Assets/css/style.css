@@ -195,7 +195,7 @@ textarea {
 }
 
 .modal_hide {
-  opacity: 0.2;
+  opacity: 0;
 }
 
 .modal_show {
