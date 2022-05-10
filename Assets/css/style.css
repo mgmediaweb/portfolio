@@ -169,6 +169,14 @@ textarea {
   width: 100%;
 }
 
+.menu_hide {
+  left: 100%;
+}
+
+.menu_show {
+  left: 0;
+}
+
 .modal {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.85);
@@ -180,6 +188,7 @@ textarea {
   top: 0;
   width: 100%;
   z-index: 1000;
+  transition: 0.5s;
 }
 
 .modalWin {
@@ -240,6 +249,7 @@ textarea {
   color: white;
   display: block;
   padding: 0 20px;
+  user-select: none;
 }
 
 .presentation {
@@ -356,13 +366,13 @@ textarea {
 #mobile_menu {
   background-color: #3c3a39;
   box-sizing: border-box;
-  display: none;
+  display: block;
   height: 100%;
   font-weight: bold;
   font-size: 1.5rem;
-  left: 0;
   padding: 10px;
   position: fixed;
+  transition: 0.5s;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -376,8 +386,9 @@ textarea {
   justify-content: center;
   padding: 0;
   position: absolute;
-  top: 10px;
   right: 10px;
+  top: 10px;
+  user-select: none;
   width: 50px;
 }
 
@@ -764,6 +775,10 @@ article:hover .work-btn {
     font-weight: normal;
     line-height: 4.5rem;
     margin-bottom: 20px;
+  }
+
+  #mobile_menu {
+    display: none;
   }
 
   .contact-container {

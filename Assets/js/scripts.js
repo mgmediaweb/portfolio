@@ -48,8 +48,14 @@ const mobileMenu = document.querySelector('#mobile_menu');
 const mobileMenuBtnOpen = document.querySelector('.movil-menu');
 const mobileMenuBtnClose = document.querySelector('#mobile_button');
 
-const menuClose = () => { mobileMenu.style.display = 'none'; };
-const menuOpen = () => { mobileMenu.style.display = 'block'; };
+const menuClose = () => {
+  mobileMenu.classList.remove('menu_show');
+  mobileMenu.classList.add('menu_hide');
+};
+const menuOpen = () => {
+  mobileMenu.classList.remove('menu_hide');
+  mobileMenu.classList.add('menu_show');
+};
 
 const goto = (section) => {
   window.location.replace(`#${section}`);
@@ -78,6 +84,7 @@ const modalClose = (opc = false) => {
 
 mobileMenuBtnClose.addEventListener('click', menuClose);
 mobileMenuBtnOpen.addEventListener('click', menuOpen);
+
 goto('cover');
 modalOpen();
 modalClose();
