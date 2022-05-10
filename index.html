@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@400;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="Assets/css/style.css" />
-    <script src="Assets/js/scripts.js"></script>
+    <script defer src="Assets/js/scripts.js"></script>
 </head>
 <body>
     <header>
@@ -29,7 +29,7 @@
                 </ul>
             </nav>
             <div class="movil-menu">
-                <a href="javascript:menuOpen();"><i class="fas fa-bars"></i></a>
+                <i class="fas fa-bars"></i>
             </div>
         </div>        
     </header>
@@ -257,7 +257,7 @@
 
     <div id="modalWin" class="modal">
         <div class="modalWin">
-            <div id="closeModal" onClick="modalClose()"><i class="fas fa-times"></i></div>
+            <div id="closeModal" onClick="modalClose('true')"><i class="fas fa-times"></i></div>
             <h2 id="modal_title">Andrade Propiedades</h2>
             <ul id="modal_lang" class="lang-tag-base">
                 <li>HTML</li>
@@ -281,7 +281,7 @@
     </div>
 
     <div id="mobile_menu">
-        <div id="mobile_button" onClick="menuClose();">
+        <div id="mobile_button">
             <i class="fas fa-times"></i>
         </div>
         <ul>
