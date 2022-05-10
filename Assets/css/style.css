@@ -171,10 +171,12 @@ textarea {
 
 .menu_hide {
   left: 100%;
+  opacity: 0;
 }
 
 .menu_show {
   left: 0;
+  opacity: 1;
 }
 
 .modal {
