@@ -393,6 +393,12 @@ textarea {
   width: 50px;
 }
 
+#mobile_menu #mobile_button img {
+  height: 20px;
+  opacity: 0.6;
+  width: 20px;
+}
+
 #portfolio {
   padding: 80px 0;
 }
