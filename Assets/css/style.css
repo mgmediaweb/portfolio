@@ -393,12 +393,6 @@ textarea {
   width: 50px;
 }
 
-#mobile_menu #mobile_button img {
-  height: 20px;
-  opacity: 0.6;
-  width: 20px;
-}
-
 #portfolio {
   padding: 80px 0;
 }
@@ -654,6 +648,12 @@ article:hover {
 article:hover img {
   animation-name: anim_image;
   animation-duration: 1s;
+}
+
+#mobile_menu #mobile_button img {
+  height: 20px;
+  opacity: 0.6;
+  width: 20px;
 }
 
 article:hover .work-info {
