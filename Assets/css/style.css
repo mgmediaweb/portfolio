@@ -355,6 +355,7 @@ textarea {
 #mobile_menu {
   background-color: #3c3a39;
   box-sizing: border-box;
+  display: none;
   height: 100%;
   font-weight: bold;
   font-size: 1.5rem;
