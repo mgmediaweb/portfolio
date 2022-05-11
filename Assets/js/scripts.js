@@ -112,6 +112,17 @@ const modalOpen = (num = null) => {
   }
 };
 
+const getInfo = () => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+
+  if (formData === true) {
+    document.getElementById('first_name').value = formData.first_name;
+    document.getElementById('last_name').value = formData.last_name;
+    document.getElementById('email').value = formData.email;
+    document.getElementById('message').value = formData.message;
+  }
+};
+
 mobileMenuBtnClose.addEventListener('click', menuClose);
 mobileMenuBtnOpen.addEventListener('click', menuOpen);
 email.addEventListener('keyup', () => { alert.style.display = 'none'; });
@@ -130,6 +141,18 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+form.addEventListener('blur', () => {
+  const formData = {
+    first_name: document.getElementById('first_name').value,
+    last_name: document.getElementById('last_name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(formData));
+}, true);
+
 goto('cover');
 modalOpen();
 modalClose();
+getInfo();
