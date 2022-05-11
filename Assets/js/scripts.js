@@ -115,7 +115,7 @@ const modalOpen = (num = null) => {
 const getInfo = () => {
   const formData = JSON.parse(localStorage.getItem('formData'));
 
-  if (formData === true) {
+  if (formData) {
     document.getElementById('first_name').value = formData.first_name;
     document.getElementById('last_name').value = formData.last_name;
     document.getElementById('email').value = formData.email;
@@ -141,7 +141,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-form.addEventListener('blur', () => {
+form.addEventListener('keyup', () => {
   const formData = {
     first_name: document.getElementById('first_name').value,
     last_name: document.getElementById('last_name').value,
