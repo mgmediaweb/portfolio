@@ -126,7 +126,7 @@ form.addEventListener('submit', (event) => {
     email.focus();
     alert.style.display = 'block';
   } else {
-    // form.submit();
+    form.submit();
   }
 });
 
