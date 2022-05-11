@@ -231,17 +231,24 @@
 
         <section id="contact">
             <div class="container contact-container">
-                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+                <p class="highText">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
                 <div class="contact-form">
                     <form
                         action="https://formspree.io/f/xjvlpyyp"
-                        method="POST"
+                        id="contactForm"
+                        method="post"
                     >
                         <input type="text" name="first_name" class="field_name" placeholder="First Name" maxlength="30" autocomplete="off" required>
                         <input type="text" name="last_name" class="field_name" placeholder="Last Name" maxlength="30" autocomplete="off" required>
-                        <input type="email" name="email" placeholder="Email" autocomplete="off" required>
+                        <input type="email" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off" required> 
                         <textarea name="message" placeholder="Message" maxlength="500" required></textarea>
+
                         <button type="submit" class="submit_btn">Get in touch</button>
+
+                        <div id="alertWin" class="alert">
+                            <i class="fas fa-exclamation-circle alertIcon"></i>
+                            <p>The email is not valid, please correct it and send it again.</p>
+                        </div>                        
                     </form>
                 </div>
             </div>

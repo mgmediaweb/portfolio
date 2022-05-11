@@ -61,6 +61,9 @@ const modal = document.querySelector('#modalWin');
 const mobileMenu = document.querySelector('#mobile_menu');
 const mobileMenuBtnOpen = document.querySelector('.movil-menu');
 const mobileMenuBtnClose = document.querySelector('#mobile_button');
+const form = document.getElementById('contactForm');
+const email = document.getElementById('email');
+const alert = document.getElementById('alertWin');
 
 const menuClose = () => {
   mobileMenu.classList.remove('menu_show');
@@ -111,6 +114,21 @@ const modalOpen = (num = null) => {
 
 mobileMenuBtnClose.addEventListener('click', menuClose);
 mobileMenuBtnOpen.addEventListener('click', menuOpen);
+email.addEventListener('keyup', () => { alert.style.display = 'none'; });
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  const emailVal = email.value.trim();
+
+  if (!emailRegex.test(emailVal)) {
+    email.focus();
+    alert.style.display = 'block';
+  } else {
+    form.submit();
+  }
+});
 
 goto('cover');
 modalOpen();
