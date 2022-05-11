@@ -96,16 +96,16 @@ textarea {
 /* CLASS BASE SECTION */
 
 .alert {
-  background-color: rgba(255,0,0,0.075);
+  background-color: rgba(255, 0, 0, 0.075);
   border: 1px solid red;
   border-radius: 5px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 5px 5px rgba(255,0,0,0.1);
+  box-shadow: 0 0 5px 5px rgba(255, 0, 0, 0.1);
   color: red;
   display: none;
   margin: 20px 0;
   padding: 8px;
-  text-align: center;  
+  text-align: center;
   width: 100%;
   transition: 0.5s;
 }
@@ -113,14 +113,6 @@ textarea {
 .alert .alertIcon {
   font-size: 1.5rem;
   margin-bottom: 5px;
-}
-
-.alert p {
-  font-weight: 400;
-  font-size: 0.9rem;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 .clear {
@@ -567,6 +559,14 @@ header p {
   color: white;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.alert p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .content-info p {
