@@ -238,10 +238,39 @@
                         id="contactForm"
                         method="post"
                     >
-                        <input type="text" name="first_name" class="field_name" placeholder="First Name" maxlength="30" autocomplete="off" required>
-                        <input type="text" name="last_name" class="field_name" placeholder="Last Name" maxlength="30" autocomplete="off" required>
-                        <input type="email" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off" required> 
-                        <textarea name="message" placeholder="Message" maxlength="500" required></textarea>
+                        <input
+                            type="text" 
+                            id="first_name" 
+                            name="first_name" 
+                            class="field_name" 
+                            placeholder="First Name" 
+                            maxlength="30" 
+                            autocomplete="off" 
+                            required>
+                        <input 
+                            type="text" 
+                            id="last_name" 
+                            name="last_name" 
+                            class="field_name" 
+                            placeholder="Last Name" 
+                            maxlength="30" 
+                            autocomplete="off" 
+                            required>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Email" 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                            autocomplete="off" 
+                            required> 
+                        <textarea 
+                            id="message"
+                            name="message" 
+                            placeholder="Message" 
+                            maxlength="500" 
+                            required
+                        ></textarea>
 
                         <button type="submit" class="submit_btn">Get in touch</button>
 
