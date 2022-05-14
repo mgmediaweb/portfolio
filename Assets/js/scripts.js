@@ -153,6 +153,6 @@ form.addEventListener('keyup', () => {
 }, true);
 
 goto('cover');
-modalOpen(0);
+modalOpen();
 modalClose();
 getInfo();
