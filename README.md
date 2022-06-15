@@ -2,7 +2,7 @@
 
 # Project Name
 
-> My Personal Portfolio.
+> Presentation of my personal portfolio, a good design and good web development practices were used.
 
 
 ## Built With
