@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Personal Portfolio
 
-> Presentation of my personal portfolio, a good design and good web development practices were used.
+> ##### Presentation of my personal portfolio, a good design and good web development practices were used.
+> ##### made with the most modern trends in web development, using semantic tags, a very clean and simple structure, and a perfect position of the elements in any type of device
 
 
 ## Built With
