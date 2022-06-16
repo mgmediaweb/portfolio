@@ -3,13 +3,15 @@
 # Personal Portfolio
 
 > ##### Presentation of my personal portfolio, a good design and good web development practices were used.
-> ##### made with the most modern trends in web development, using semantic tags, a very clean and simple structure, and a perfect position of the elements in any type of device
+> ##### Made with the most modern trends in web development, using semantic tags, a very clean and simple structure, and a perfect position of the elements in any type of device
+> ##### Javascript was used on this site to perform interactive actions, such as displaying menus and animated popups, as well as updating the information of each project dynamically.
 
 
 ## Built With
 
 - HTML5
 - CSS3
+- Javscript
 
 ## Live Demo
 
